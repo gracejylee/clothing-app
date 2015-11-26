@@ -10,6 +10,9 @@ import UIKit
 
 class MyClosetCell: UITableViewCell {
 
+    @IBOutlet var cellImage: UIImageView!
+    @IBOutlet var cellItemName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

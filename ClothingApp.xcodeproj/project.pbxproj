@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		776FE6921C057A8800A67AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FE6911C057A8800A67AC0 /* AppDelegate.swift */; };
 		776FE6951C057A8800A67AC0 /* ClothingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 776FE6931C057A8800A67AC0 /* ClothingApp.xcdatamodeld */; };
-		776FE6971C057A8800A67AC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FE6961C057A8800A67AC0 /* ViewController.swift */; };
 		776FE69A1C057A8800A67AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776FE6981C057A8800A67AC0 /* Main.storyboard */; };
 		776FE69C1C057A8800A67AC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776FE69B1C057A8800A67AC0 /* Images.xcassets */; };
 		776FE69F1C057A8800A67AC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776FE69D1C057A8800A67AC0 /* LaunchScreen.xib */; };
 		776FE6AB1C057A8800A67AC0 /* ClothingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FE6AA1C057A8800A67AC0 /* ClothingAppTests.swift */; };
+		776FE6B71C05871000A67AC0 /* MyClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FE6B61C05871000A67AC0 /* MyClosetViewController.swift */; };
+		776FE6BB1C06716F00A67AC0 /* MyClosetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FE6BA1C06716F00A67AC0 /* MyClosetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,14 @@
 		776FE6901C057A8800A67AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776FE6911C057A8800A67AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		776FE6941C057A8800A67AC0 /* ClothingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClothingApp.xcdatamodel; sourceTree = "<group>"; };
-		776FE6961C057A8800A67AC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		776FE6991C057A8800A67AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		776FE69B1C057A8800A67AC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		776FE69E1C057A8800A67AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		776FE6A41C057A8800A67AC0 /* ClothingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClothingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		776FE6A91C057A8800A67AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776FE6AA1C057A8800A67AC0 /* ClothingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingAppTests.swift; sourceTree = "<group>"; };
+		776FE6B61C05871000A67AC0 /* MyClosetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClosetViewController.swift; sourceTree = "<group>"; };
+		776FE6BA1C06716F00A67AC0 /* MyClosetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClosetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		776FE6831C057A8800A67AC0 = {
 			isa = PBXGroup;
 			children = (
+				776FE6B61C05871000A67AC0 /* MyClosetViewController.swift */,
 				776FE68E1C057A8800A67AC0 /* ClothingApp */,
 				776FE6A71C057A8800A67AC0 /* ClothingAppTests */,
 				776FE68D1C057A8800A67AC0 /* Products */,
@@ -80,8 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				776FE6911C057A8800A67AC0 /* AppDelegate.swift */,
-				776FE6961C057A8800A67AC0 /* ViewController.swift */,
 				776FE6981C057A8800A67AC0 /* Main.storyboard */,
+				776FE6BA1C06716F00A67AC0 /* MyClosetCell.swift */,
 				776FE69B1C057A8800A67AC0 /* Images.xcassets */,
 				776FE69D1C057A8800A67AC0 /* LaunchScreen.xib */,
 				776FE6931C057A8800A67AC0 /* ClothingApp.xcdatamodeld */,
@@ -164,6 +167,7 @@
 				TargetAttributes = {
 					776FE68B1C057A8800A67AC0 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2NKLZJVG9L;
 					};
 					776FE6A31C057A8800A67AC0 = {
 						CreatedOnToolsVersion = 6.4;
@@ -215,7 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				776FE6971C057A8800A67AC0 /* ViewController.swift in Sources */,
+				776FE6B71C05871000A67AC0 /* MyClosetViewController.swift in Sources */,
+				776FE6BB1C06716F00A67AC0 /* MyClosetCell.swift in Sources */,
 				776FE6921C057A8800A67AC0 /* AppDelegate.swift in Sources */,
 				776FE6951C057A8800A67AC0 /* ClothingApp.xcdatamodeld in Sources */,
 			);
@@ -344,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ClothingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ClothingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
