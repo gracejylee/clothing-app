@@ -10,7 +10,8 @@ import UIKit
 
 class MyClosetViewController: UITableViewController {
     
-    var ClosetItems = ["Tops", "Bottoms", "Dresses", "Suits", "Outerwear", "Shoes", "Accessories"]
+    
+    var ClosetItems = [["Tops", "Short-sleeve Tees", "Long-sleeve Tees", "Tank Tops", "Button-down Shirts", "Dress Shirts", "Blouses", "Sweaters", "Sweatshirts"], ["Bottoms", "Shorts", "Pants", "Skirts"], ["Dresses", "Casual Dresses", "Formal Dresses"], ["Outerwear", "Jackets", "Coats"]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +43,7 @@ class MyClosetViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return ClosetItems.count
+        return (ClosetItems.count)
     }
 
     
@@ -51,7 +52,7 @@ class MyClosetViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! MyClosetCell
 
         // Configure the cell...
-        cell.cellItemName?.text = ClosetItems[indexPath.row]
+        cell.cellItemName?.text = ClosetItems[indexPath.row][0]
         //cell.cellImage?.image = UIImage(named: "tshirticon.png")
         
         // Display rounded cells
@@ -103,14 +104,21 @@ class MyClosetViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+    
+        if segue.identifier == "ShowItemSubcategories"  {
+            if let indPath = self.tableView.indexPathForSelectedRow() {
+                let subcategoriesViewController = segue.destinationViewController as! SubcategoriesViewControllerTableViewController
+                subcategoriesViewController.SubcategoryItems = self.ClosetItems[indPath.row]
+            }
+        }
     }
-    */
+    
 
 }

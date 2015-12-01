@@ -15,6 +15,8 @@
 		776FE6AB1C057A8800A67AC0 /* ClothingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FE6AA1C057A8800A67AC0 /* ClothingAppTests.swift */; };
 		776FE6B71C05871000A67AC0 /* MyClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FE6B61C05871000A67AC0 /* MyClosetViewController.swift */; };
 		776FE6BB1C06716F00A67AC0 /* MyClosetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FE6BA1C06716F00A67AC0 /* MyClosetCell.swift */; };
+		8A5CB76F1C0D481D0020A50B /* SubcategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5CB76E1C0D481D0020A50B /* SubcategoryCell.swift */; };
+		8A7CEE0E1C06B01F002BB1FA /* SubcategoriesViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CEE0D1C06B01F002BB1FA /* SubcategoriesViewControllerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		776FE6AA1C057A8800A67AC0 /* ClothingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingAppTests.swift; sourceTree = "<group>"; };
 		776FE6B61C05871000A67AC0 /* MyClosetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClosetViewController.swift; sourceTree = "<group>"; };
 		776FE6BA1C06716F00A67AC0 /* MyClosetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClosetCell.swift; sourceTree = "<group>"; };
+		8A5CB76E1C0D481D0020A50B /* SubcategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubcategoryCell.swift; sourceTree = "<group>"; };
+		8A7CEE0D1C06B01F002BB1FA /* SubcategoriesViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubcategoriesViewControllerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 			children = (
 				776FE6911C057A8800A67AC0 /* AppDelegate.swift */,
 				776FE6981C057A8800A67AC0 /* Main.storyboard */,
+				8A5CB76E1C0D481D0020A50B /* SubcategoryCell.swift */,
+				8A7CEE0D1C06B01F002BB1FA /* SubcategoriesViewControllerTableViewController.swift */,
 				776FE6BA1C06716F00A67AC0 /* MyClosetCell.swift */,
 				776FE69B1C057A8800A67AC0 /* Images.xcassets */,
 				776FE69D1C057A8800A67AC0 /* LaunchScreen.xib */,
@@ -223,6 +229,8 @@
 				776FE6BB1C06716F00A67AC0 /* MyClosetCell.swift in Sources */,
 				776FE6921C057A8800A67AC0 /* AppDelegate.swift in Sources */,
 				776FE6951C057A8800A67AC0 /* ClothingApp.xcdatamodeld in Sources */,
+				8A5CB76F1C0D481D0020A50B /* SubcategoryCell.swift in Sources */,
+				8A7CEE0E1C06B01F002BB1FA /* SubcategoriesViewControllerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +428,7 @@
 				776FE6B01C057A8800A67AC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		776FE6B11C057A8800A67AC0 /* Build configuration list for PBXNativeTarget "ClothingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +437,7 @@
 				776FE6B31C057A8800A67AC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

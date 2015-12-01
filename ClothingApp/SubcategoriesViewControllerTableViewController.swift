@@ -9,12 +9,10 @@
 import UIKit
 
 class SubcategoriesViewControllerTableViewController: UITableViewController {
-
-    @IBOutlet weak var SubcategoryImg: UIImageView!
-    @IBOutlet weak var SubcategoryLabel: UILabel!
     
-    var SubcategoryImgText : String!
-    var SubcategoryLabelText : String!
+    var SubcategoryItems = [String]()
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +23,8 @@ class SubcategoriesViewControllerTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        self.SubcategoryImg.image = UIImage(named: self.SubcategoryImgText)
-        self.SubcategoryLabel.text = self.SubcategoryLabelText
+        //self.SubcategoryImg.image = UIImage(named: "tshirticon.png")
+        //self.SubcategoryLabel.text = self.SubcategoryLabelText
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,24 +37,36 @@ class SubcategoriesViewControllerTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return SubcategoryItems.count-1
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
 
+        let cellIdentifier = "SubcategoryCell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! SubcategoryCell
+        
         // Configure the cell...
-
+        cell.subcategoryCellLabel?.text = SubcategoryItems[indexPath.row+1]
+        
+        // Display rounded cells
+        cell.subcategoryCellImage?.frame = CGRect (x: 0.0, y: 0.0, width: 60, height: 60)
+        cell.subcategoryCellImage?.layer.cornerRadius = cell.subcategoryCellImage.frame.size.width/2.0
+        cell.subcategoryCellImage?.clipsToBounds = true
+        cell.subcategoryCellImage?.layer.masksToBounds = true
+        cell.subcategoryCellImage?.image = UIImage(named: "tshirticon.png")
+        
         return cell
+
+
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
